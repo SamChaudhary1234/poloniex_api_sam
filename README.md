@@ -1,4 +1,4 @@
-## Poloniex_api
+## Poloniex_api_sam
 python project which looks for crypto arbitrage opportunities by using the poloniex api 
 
 ## Triangular Arbitrage in Cryptocurrency
