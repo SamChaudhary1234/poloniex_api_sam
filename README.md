@@ -1,66 +1,81 @@
-Poloniex API – Crypto Arbitrage Detection
-Overview:
+## Poloniex_api
+python project which looks for crypto arbitrage opportunities by using the poloniex api 
 
-This Python and JavaScript project is designed to identify triangular arbitrage opportunities in the cryptocurrency market using data from both centralized exchanges (CeFi) like Poloniex and decentralized exchanges (DeFi) such as Uniswap V3.
+## Triangular Arbitrage in Cryptocurrency
+This project focuses on identifying and exploiting triangular arbitrage opportunities in the cryptocurrency market. The project is developed using Python and JavaScript, and it covers both centralized exchanges (CeFi) and decentralized exchanges (DeFi).
 
-Objectives:
-Gain a deep understanding of crypto arbitrage, with a focus on triangular arbitrage.
+## Project Overview
+This project aims to:
 
-Develop and implement arbitrage logic using Python and JavaScript.
+Gain a deep understanding of arbitrage with a particular focus on triangular arbitrage.
+Develop skills in Python and JavaScript for implementing arbitrage strategies.
+Establish all traceable triangular arbitrage pairs.
+Calculate surface rate opportunities across all pairs.
+Calculate real rates for arbitrage with depth.
+Cover the above points in both CeFi (with the Poloniex exchange) and DeFi (with Uniswap V3).
+Pull data from the web by exploring the REST API endpoints with Poloniex.
+Read blockchain price information with Web3 and Ethers.js.
+Work with the Uniswap V3 SDK.
 
-Detect and map all valid triangular arbitrage pair cycles.
+## Features
 
-Compute both surface rates and real arbitrage rates (accounting for market depth).
 
-Integrate Poloniex REST APIs for CeFi data and Web3/Ethers.js with Uniswap V3 SDK for DeFi data access.
+Triangular Arbitrage Calculation: Identify and calculate triangular arbitrage opportunities.
+Surface Rate Calculation: Calculate surface rate opportunities across all pairs.
+Real Rate Calculation: Calculate real rates for arbitrage with depth.
+Data Retrieval: Pull data from Poloniex and other exchanges using REST APIs.
+Blockchain Interaction: Read blockchain price information using Web3 and Ethers.js.
+Uniswap V3 SDK: Work with the Uniswap V3 SDK for DeFi arbitrage.
 
-Key Features:
-Triangular Arbitrage Detection: Automatically find profitable trading loops across three pairs.
+## Technologies Used
 
-Surface & Real Rate Analysis: Compute theoretical profits and validate with order book depth.
 
-API Integration: Fetch live data using REST APIs (Poloniex) and blockchain data via Web3.
+Python: For implementing the core logic and calculations.
+JavaScript: For additional functionalities and comparisons.
+Poloniex API: For retrieving data from the Poloniex exchange.
+Web3 and Ethers.js: For interacting with the blockchain.
+Uniswap V3 SDK: For working with Uniswap V3.
 
-Cross-Platform Arbitrage: Supports both CeFi (Poloniex) and DeFi (Uniswap V3).
+## Getting Started
 
-Uniswap V3 SDK Support: Leverages SDK for routing and slippage-aware calculations.
 
-Technologies Used:
-Python – Core arbitrage logic and rate calculations.
+## Prerequisites
 
-JavaScript – Pair cycle generation and blockchain interactions.
 
-Poloniex API – Live market data for centralized exchange analysis.
+Basic knowledge of cryptocurrencies.
+No prior programming skills or knowledge of arbitrage needed.
 
-Web3 & Ethers.js – Blockchain interaction for DeFi pricing.
+## Installation
 
-Uniswap V3 SDK – DeFi pool routing and depth-based price checks.
 
-Getting Started:
-Prerequisites:
+## 1.Clone the repository:
 
-Basic understanding of cryptocurrencies.
-
-No prior knowledge of arbitrage or programming is required.
-
-Setup Instructions:
-
-bash
-Copy
-Edit
-# Clone the repository
+```shell
 git clone https://github.com/salin1771/poloniex_api.git
+```
+
+## 2. move into the repo
+
+```shell   
 cd poloniex_api
+```
 
-# Install JavaScript dependencies
+## 3.Install the required JavaScript packages:
+
+```shell
 npm install
-Run the Python arbitrage logic:
+```
 
-bash
-Copy
-Edit
+## Usage
+
+
+1.Run the Python scripts to calculate triangular arbitrage opportunities:
 python func_arbitrage.py
-The JavaScript module includes logic to identify and visualize all possible pair cycles for triangular arbitrage.
 
-Acknowledgments:
-This project was created as a hands-on exploration of triangular arbitrage strategies in both centralized and decentralized crypto markets. It offers a practical framework to understand arbitrage workflows, API integration, and cross-market price discrepancies.
+2.Use the JavaScript files for additional functionalities and comparisons.
+the javascript file contains all the possible pair cycles for the triangular arbitrage.
+
+## Acknowledgments
+This project was developed to explore and implement triangular arbitrage strategies in the cryptocurrency market. It covers both centralized and decentralized exchanges, providing a comprehensive understanding of arbitrage opportunities.
+
+
